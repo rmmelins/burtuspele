@@ -4,19 +4,76 @@
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.header{
+    background-color: grey;
+    height:1000px;
+    width: 100%;
+}
+.saktpoga{
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    padding: 10px 20px;
+    font-size: 35px;
+}
+ul {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+ 
+li {
+  float: left;
+}
+ 
+li a {
+  font-size: 24px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 4px;
+}
+ 
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.iest{
+    background-color: white;
+    height:1000px;
+    width: 100%;
+}
+.rezu{
+    background-color: grey;
+    height:1000px;
+    width: 100%;
+}
+.kasp{
+    background-color: white;
+    height:1000px;
+    width: 100%;
+}
+.veid{
+    background-color: grey;
+    height:1000px;
+    width: 100%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  width: 100%;
+}
+.nosaukums{
+    float:right;
+    margin-right: 40px;
+}
+h1{
+    color:white;
+}
