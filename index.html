@@ -3,70 +3,47 @@
 <head>
 <title>Burtu spēle</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js"></script>
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
 </head>
 <body>
-
-<!-- Navbar -->
 <ul>
-<li><a href="#spelet">Spēlēt</a></li>
+<li class="kreisais"><a href="#spelet">Spēlēt</a></li>
 <li><a href="#iestatijumi">Iestatījumi</a></li>
 <li><a href="#rezultati">Rezultāti</a></li>
 <li><a href="#kaspelet">Kā spēlēt?</a></li>
 <li><a href="#veidotaji">Par veidotājiem</a></li>
-<li class="nosaukums"><h1>BURTU SPELE</h1></li>
 </ul>
-
-<!-- Header -->
-<header class="header" id="spelet">
-  <div class="center">
-    <button class="saktpoga" onclick="sakt();">Sākt spēli</button>
-  </div>
-</header>
-
-
+ 
+<section class="header" id="spelet">
+<div class="container">
+<div id="laukums">
+<button class="start" onclick="vards();"><span class="material-symbols-outlined">
+play_arrow
+</span></button>
+</div>
+</div>
+</section>
+ 
 <section class="iest" id="iestatijumi">
-    
+<h2>Iestatījumi</h2>
 </section>
-
-
+ 
 <section class="rezu" id="rezultati">
-    
 </section>
-
-
+ 
 <section class="kasp" id="kaspelet">
-    
 </section>
-
-
+ 
 <section class="veid" id="veidotaji">
-    
 </section>
-
-
+ 
 <script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
 </script>
-
+ 
 </body>
 </html>
