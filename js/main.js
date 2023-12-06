@@ -1,13 +1,20 @@
-
+            let punkti;
+            let laiks;
+            let laiksPalicis;
+            
             var countDownDate, spele;
-            function sakt(bv, bsk, pt) {//burtu veidi, katra burta sk, punkti par darbibu
+            function sakt() {//bv, bsk, pt burtu veidi, katra burta sk, punkti par darbibu
                 document.getElementById("myForm").style.display = "none";
-                var punkti=0;
+                document.getElementById("laukums").style.display = "flex";
+                document.getElementById("boxes").style.display = "block";
+                punkti = 0;
+                laiksPalicis = 60;
                 countDownDate = new Date().getTime();
                 spele = setInterval(skaita, 1000);
-                taimeris();//uztaisis redzamu laika skaitisanu
-                tablo();//izveido punktu skaita vietu
-                izvburtus(bv,bsk);//izveido burtus
+                skaita();
+                const bv=["a","b","c"];
+                let bsk =10;
+                izvburtus(bv,bsk);//izveido burtus, vajadzees getot to setings no iestatijumiem
             }
         // Update the count down every 1 second
             function skaita() {
@@ -24,27 +31,31 @@
  
 
                 // Output the result in an element with id="demo"
-                document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+                document.getElementById("laiks").innerHTML = minutes + "m " + seconds + "s ";
 
  
 
                 // If the count down is over, write some text 
                 if (distance > 5000) {
                     clearInterval(spele);
-                    document.getElementById("demo").innerHTML = "EXPIRED";
+                    document.getElementById("laiks").innerHTML = "EXPIRED";
                 }
             }
-            function taimeris(){
-            
-            }
-            function izvburtus(bv,bsk){
+            function izvburtus(bv,bsk){ 
                 for(let i=0; i<bv.length; i++){
                     for(let j=0; j<bsk;j++){
                         if(j===0){
-                            let k = document.laukums.createElement("DIV"); k.id="kaste";//cikla 1. reizee izveido burta kasti
-                            document.laukums.appendChild(k); k.innerHTML="i";
+                            let k = document.laukums.createElement("DIV"); 
+                            k.class="box";
+                            k.ondrop="drop(event)";
+                            k.ondragover="allowDrop(event)";//cikla 1. reizee izveido burta kasti
+                            k.innerHTML=bv[i];
+                            document.laukums.appendChild(k);
                             
                         }
+                            let b = document.laukums.createElement("DIV");
+                            k.class="burts";
+                            k.innerHTML=bv[i];
                     }
                 }
             }

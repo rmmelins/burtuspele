@@ -7,43 +7,51 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js"></script>
 </head>
 <body>
 <ul>
-<li class="kreisais"><a href="#spelet">Spēlēt</a></li>
+<li class="kreisais"><a href="#augsa">Spēlēt</a></li>
 <li><a href="#iestatijumi">Iestatījumi</a></li>
 <li><a href="#rezultati">Rezultāti</a></li>
 <li><a href="#kaspelet">Kā spēlēt?</a></li>
 <li><a href="#veidotaji">Par veidotājiem</a></li>
 </ul>
- 
+<section class="augsa" id="augsa"> </section>
 <section class="header" id="spelet">
-<div class="container">
-<div id="laukums">
-<button class="start" onclick="vards();"><span class="material-symbols-outlined">
-play_arrow
-</span></button>
+<div class="myForm" id="myForm">
+<form action="" class="form-container">
+<input type="text" placeholder="Ievadiet savu vārdu" name="email" required>
+<button type="submit" class="start" onclick="sakt();">Sākt spēli</button>
+</form>
+</div>
+<div class="laukums" id="laukums">
+<div class="laiks" id="laiks">Time: 60s</div>
+<div class="punkti" id="punkti">Score: 0</div>
+<div class="boxes" id="boxes">
+<div class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 </div>
 </div>
 </section>
- 
 <section class="iest" id="iestatijumi">
 <h2>Iestatījumi</h2>
 </section>
- 
 <section class="rezu" id="rezultati">
+<h2>Rezultāti</h2>
 </section>
- 
 <section class="kasp" id="kaspelet">
+<h2>Kā spēlēt?</h2>
 </section>
- 
 <section class="veid" id="veidotaji">
+<h2>Par veidotājiem</h2>
 </section>
- 
 <script>
 </script>
- 
 </body>
 </html>
